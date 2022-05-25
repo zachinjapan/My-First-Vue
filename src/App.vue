@@ -2,17 +2,20 @@
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Welcome to Your Vue.js App" />
   <MyCounter />
+  <RandomFox />
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import MyCounter from "./components/MyCounter.vue";
+import RandomFox from "./components/RandomFox.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
     MyCounter,
+    RandomFox,
   },
 };
 </script>
