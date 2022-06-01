@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>Random Fox</h1>
-    <img :src="imageURL" alt="Random fox" />
+    <h1>ランダムキツネ</h1>
     <button @click="fetchFoxImage">Get Random Fox</button>
+    <img :src="imageURL" loading="lazy" alt="Random fox" />
   </div>
 </template>
 
@@ -39,4 +39,15 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+}
+</style>

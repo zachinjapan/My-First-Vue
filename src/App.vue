@@ -1,19 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
   <MyCounter />
   <RandomFox />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import MyCounter from "./components/MyCounter.vue";
 import RandomFox from "./components/RandomFox.vue";
+// Global CSS
+import "./assets/main.css";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     MyCounter,
     RandomFox,
   },
@@ -21,12 +20,15 @@ export default {
 </script>
 
 <style>
+* {
+  background-color: black;
+  color: white;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 </style>
